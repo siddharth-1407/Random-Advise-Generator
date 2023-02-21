@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Advice generator app</title>
+	</head>
+	<body>
+		<main
+			class="wrapper flex flex-col items-center justify-between text-center rounded-lg px-4 pt-8 pb-14 sm:w-[33.75rem] sm:min-h-[20.75rem] sm:px-8 sm:rounded-2xl">
+			<div class="id_container p-3 uppercase text-xs tracking-[0.25rem] sm:text-sm">
+				<p>Advice #<span id="advice_id"></span></p>
+			</div>
+			<div class="advice_container px-1 py-4" aria-live="assertive">
+				<!-- <p> -->
+				<blockquote id="advice" class="sm:text-3xl leading-normal"></blockquote>
+				<!-- </p> -->
+			</div>
+			<div class="divider">
+				<picture>
+					<source
+						media="(min-width: 465px)"
+						srcset="./images/pattern-divider-desktop.svg" />
+					<img src="./images/pattern-divider-mobile.svg" style="width: auto" />
+				</picture>
+			</div>
+
+			<button
+				class="btn p-4 rounded-full"
+				id="generateAdviceBtn"
+				aria-label="generateAdvice"
+				onclick="generateAdvice">
+				<img src="./images/icon-dice.svg" alt="" />
+			</button>
+			<!-- <img src="./images/pattern-divider-desktop.svg" alt=""> -->
+		</main>
+
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+			>. Coded by
+			<a href="https://www.frontendmentor.io/profile/siddharth-1407">Siddharth</a>.
+		</div>
+	</body>
+	<script src="main.js"></script>
+</html>
