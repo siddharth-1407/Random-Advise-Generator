@@ -76,6 +76,9 @@ blockquote::after {
 	color: var(--theme-clr);
 	text-decoration: none;
 }
+.attribution a:hover{
+text-decoration: underline;
+}
 .btn-animation {
 	animation: shake 100ms 1;
 }
