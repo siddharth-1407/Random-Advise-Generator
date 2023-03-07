@@ -74,10 +74,10 @@ blockquote::after {
 }
 .attribution a {
 	color: var(--theme-clr);
-	text-decoration: none;
+	text-decoration: underline;
 }
 .attribution a:hover{
-text-decoration: underline;
+text-decoration: none;
 }
 .btn-animation {
 	animation: shake 100ms 1;
